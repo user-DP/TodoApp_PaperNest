@@ -1,59 +1,57 @@
-# TodoAppPapernest
+# Application Todo
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.5.
+## Description
 
-## Development server
+Ceci est un projet d'application de liste de tâches (todo).
 
-To start a local development server, run:
+## Prérequis
 
-```bash
-ng serve
-```
+- Node.js (^18.19.1 || ^20.11.1 || ^22.0.0)
+- npm ou yarn
+- Docker (optionnel)
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Installation et Configuration
 
-## Code scaffolding
+### Sans Docker
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+1. Cloner le dépôt :
 
 ```bash
-ng generate --help
+git clone https://github.com/user-DP/TodoApp_PaperNest.git
+cd todo-app-papernest
 ```
 
-## Building
-
-To build the project run:
+2. Installer les dépendances :
 
 ```bash
-ng build
+npm install
+# ou
+yarn install
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+3. Démarrer l'application :
 
 ```bash
-ng test
+npm start
+# ou
+yarn start
 ```
 
-## Running end-to-end tests
+L'application sera accessible à l'adresse `http://localhost:4200`
 
-For end-to-end (e2e) testing, run:
+### Avec Docker
+
+1. Cloner le dépôt :
 
 ```bash
-ng e2e
+git clone https://github.com/user-DP/TodoApp_PaperNest.git
+cd todo-app-papernest
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+2. Construire et exécuter avec Docker :
 
-## Additional Resources
+```bash
+docker-compose up --build
+```
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+L'application sera accessible à l'adresse `http://localhost:4200`
